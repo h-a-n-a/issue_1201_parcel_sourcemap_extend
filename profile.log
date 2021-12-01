@@ -1,0 +1,140 @@
+Statistical profiling result from v8.log, (31963 ticks, 1875 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+    375    1.2%          /usr/lib/system/libsystem_platform.dylib
+     29    0.1%          /usr/lib/system/libsystem_pthread.dylib
+     21    0.1%          /usr/lib/system/libsystem_malloc.dylib
+     18    0.1%          /usr/lib/system/libsystem_kernel.dylib
+      4    0.0%          /usr/lib/system/libsystem_c.dylib
+      2    0.0%          /usr/lib/libc++.1.dylib
+      1    0.0%          /usr/lib/libc++abi.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+      4    0.0%    0.0%  LazyCompile: *<anonymous> /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/node_modules/.pnpm/@parcel+source-map@2.0.0/node_modules/@parcel/source-map/dist/node.js:34:43
+      1    0.0%    0.0%  LazyCompile: *<anonymous> /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/node_modules/.pnpm/@parcel+source-map@2.0.0/node_modules/@parcel/source-map/dist/utils.js:27:65
+
+ [C++]:
+   ticks  total  nonlib   name
+  26074   81.6%   82.7%  t __ZN6v8impl12_GLOBAL__N_123FunctionCallbackWrapper6InvokeERKN2v820FunctionCallbackInfoINS2_5ValueEEE
+   3245   10.2%   10.3%  t __ZN2v88internal12_GLOBAL__N_132InsertCodeIntoOptimizedCodeCacheEPNS0_24OptimizedCompilationInfoE
+    103    0.3%    0.3%  T _mach_port_allocate
+     39    0.1%    0.1%  T __ZN4node13native_module15NativeModuleEnv15CompileFunctionERKN2v820FunctionCallbackInfoINS2_5ValueEEE
+     38    0.1%    0.1%  T _task_restartable_ranges_synchronize
+     23    0.1%    0.1%  T __simple_asl_send
+     19    0.1%    0.1%  T __kernelrpc_mach_port_get_refs
+     14    0.0%    0.0%  t __ZN4node6Buffer12_GLOBAL__N_111StringSliceILNS_8encodingE1EEEvRKN2v820FunctionCallbackInfoINS4_5ValueEEE
+     14    0.0%    0.0%  T _mig_get_reply_port
+      7    0.0%    0.0%  t __ZN2v88internal12StringHasher20HashSequentialStringIhEEjPKT_iy
+      6    0.0%    0.0%  t __ZN2v88internal6String7FlattenEPNS0_7IsolateENS0_6HandleIS1_EENS0_14AllocationTypeE
+      6    0.0%    0.0%  T _semaphore_create
+      5    0.0%    0.0%  t __ZN4node2fsL4ReadERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      4    0.0%    0.0%  T ___getrlimit
+      3    0.0%    0.0%  T _socket
+      3    0.0%    0.0%  T __ZN4node7binding18GetInternalBindingERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      2    0.0%    0.0%  t _dec
+      2    0.0%    0.0%  t __ZN2v88internal12_GLOBAL__N_119HandleApiCallHelperILb0EEENS0_11MaybeHandleINS0_6ObjectEEEPNS0_7IsolateENS0_6HandleINS0_10HeapObjectEEESA_NS8_INS0_20FunctionTemplateInfoEEENS8_IS4_EENS0_16BuiltinArgumentsE
+      2    0.0%    0.0%  t __ZN2v88internal12StringHasher20HashSequentialStringItEEjPKT_iy
+      2    0.0%    0.0%  T __ZN4node7binding6DLOpenERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      2    0.0%    0.0%  T __ZN4node10contextify17ContextifyContext15CompileFunctionERKN2v820FunctionCallbackInfoINS2_5ValueEEE
+      1    0.0%    0.0%  t __pthread_terminate
+      1    0.0%    0.0%  t __pthread_mutex_check_init_slow
+      1    0.0%    0.0%  t __ZNSt3__112__hash_tableImNS_4hashImEENS_8equal_toImEENS_9allocatorImEEE8__rehashEm
+      1    0.0%    0.0%  t __ZNSt3__112__hash_tableIPvNS_4hashIS1_EENS_8equal_toIS1_EENS_9allocatorIS1_EEE4findIS1_EENS_15__hash_iteratorIPNS_11__hash_nodeIS1_S1_EEEERKT_
+      1    0.0%    0.0%  t __ZN4node2fsL5LStatERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      1    0.0%    0.0%  t __ZN4node2fsL18InternalModuleStatERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      1    0.0%    0.0%  t __ZN4node13CallbackQueueIvJPNS_11EnvironmentEEE12CallbackImplIZN6v8impl12_GLOBAL__N_115BufferFinalizer22FinalizeBufferCallbackEPcPvEUlS2_E_E4CallES2_
+      1    0.0%    0.0%  t __ZN4node11credentialsL10SafeGetenvERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      1    0.0%    0.0%  t __ZN2v88internal25FunctionCallbackArguments4CallENS0_15CallHandlerInfoE
+      1    0.0%    0.0%  t __ZN2v88internal12_GLOBAL__N_124ProbeInstantiationsCacheEPNS0_7IsolateENS0_6HandleINS0_13NativeContextEEEiNS1_11CachingModeE
+      1    0.0%    0.0%  t __ZN2v84base19TemplateHashMapImplIPvS2_NS0_26HashEqualityThenKeyMatcherIS2_PFbS2_S2_EEENS0_23DefaultAllocationPolicyEE6ResizeES7_
+      1    0.0%    0.0%  T _task_set_special_port
+      1    0.0%    0.0%  T _pthread_getschedparam
+      1    0.0%    0.0%  T _proc_set_dirty
+      1    0.0%    0.0%  T ___pthread_init
+      1    0.0%    0.0%  T __ZN4node7TTYWrap3NewERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      1    0.0%    0.0%  T __ZN4node12NodePlatform27MonotonicallyIncreasingTimeEv
+      1    0.0%    0.0%  T __ZN2v88internal8Builtins4nameEi
+      1    0.0%    0.0%  T __ZN2v88TryCatchD2Ev
+      1    0.0%    0.0%  T __ZN2v87Context4ExitEv
+
+ [Summary]:
+   ticks  total  nonlib   name
+      5    0.0%    0.0%  JavaScript
+  29633   92.7%   94.0%  C++
+    450    1.4%    1.4%  GC
+    450    1.4%          Shared libraries
+   1875    5.9%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+  26147   88.8%   81.8%  T __ZN2v88internal21Builtin_HandleApiCallEiPmPNS0_7IsolateE
+   1634    5.5%    5.1%  T __ZN2v88internal17Builtin_JsonParseEiPmPNS0_7IsolateE
+   1563    5.3%    4.9%  T __ZN2v88internal21Builtin_JsonStringifyEiPmPNS0_7IsolateE
+     97    0.3%    0.3%  t __ZN2v88internal12_GLOBAL__N_132InsertCodeIntoOptimizedCodeCacheEPNS0_24OptimizedCompilationInfoE
+      4    0.0%    0.0%  T __ZN2v88internal30Builtin_ObjectDefinePropertiesEiPmPNS0_7IsolateE
+      2    0.0%    0.0%  t __ZN4node9inspector12_GLOBAL__N_120InspectorConsoleCallERKN2v820FunctionCallbackInfoINS2_5ValueEEE
+      1    0.0%    0.0%  T __ZN4node6loader10ModuleWrap8EvaluateERKN2v820FunctionCallbackInfoINS2_5ValueEEE
+      1    0.0%    0.0%  T __ZN2v88internal39Builtin_ObjectGetOwnPropertyDescriptorsEiPmPNS0_7IsolateE
+      1    0.0%    0.0%  T __ZN2v88internal35Builtin_ObjectGetOwnPropertySymbolsEiPmPNS0_7IsolateE
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+  26074   81.6%  t __ZN6v8impl12_GLOBAL__N_123FunctionCallbackWrapper6InvokeERKN2v820FunctionCallbackInfoINS2_5ValueEEE
+  26074  100.0%    T __ZN2v88internal21Builtin_HandleApiCallEiPmPNS0_7IsolateE
+  18790   72.1%      LazyCompile: ~addVLQMap /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/node_modules/.pnpm/@parcel+source-map@2.0.0/node_modules/@parcel/source-map/dist/node.js:23:12
+  11233   59.8%        LazyCompile: ~<anonymous> /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/dist/index.js:85:20
+  11233  100.0%          t __ZN2v88internal12_GLOBAL__N_132InsertCodeIntoOptimizedCodeCacheEPNS0_24OptimizedCompilationInfoE
+  11233  100.0%            LazyCompile: ~remapping /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/dist/index.js:73:19
+   7557   40.2%        LazyCompile: ~remapping /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/dist/index.js:73:19
+   7557  100.0%          Eval: ~<anonymous> /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/profile/remapping.js:6:3
+   7514   99.4%            t __ZN2v88internal12_GLOBAL__N_132InsertCodeIntoOptimizedCodeCacheEPNS0_24OptimizedCompilationInfoE
+   2458    9.4%      LazyCompile: ~extends /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/node_modules/.pnpm/@parcel+source-map@2.0.0/node_modules/@parcel/source-map/dist/node.js:55:10
+   2458  100.0%        LazyCompile: ~<anonymous> /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/dist/index.js:85:20
+   2458  100.0%          t __ZN2v88internal12_GLOBAL__N_132InsertCodeIntoOptimizedCodeCacheEPNS0_24OptimizedCompilationInfoE
+   2458  100.0%            LazyCompile: ~remapping /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/dist/index.js:73:19
+   1964    7.5%      LazyCompile: ~toBuffer /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/node_modules/.pnpm/@parcel+source-map@2.0.0/node_modules/@parcel/source-map/dist/SourceMap.js:449:11
+   1964  100.0%        LazyCompile: ~<anonymous> /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/dist/index.js:85:20
+   1964  100.0%          t __ZN2v88internal12_GLOBAL__N_132InsertCodeIntoOptimizedCodeCacheEPNS0_24OptimizedCompilationInfoE
+   1964  100.0%            LazyCompile: ~remapping /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/dist/index.js:73:19
+   1554    6.0%      LazyCompile: ~NodeSourceMap /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/node_modules/.pnpm/@parcel+source-map@2.0.0/node_modules/@parcel/source-map/dist/node.js:17:14
+   1547   99.5%        LazyCompile: ~extends /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/node_modules/.pnpm/@parcel+source-map@2.0.0/node_modules/@parcel/source-map/dist/node.js:55:10
+   1547  100.0%          LazyCompile: ~<anonymous> /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/dist/index.js:85:20
+   1547  100.0%            t __ZN2v88internal12_GLOBAL__N_132InsertCodeIntoOptimizedCodeCacheEPNS0_24OptimizedCompilationInfoE
+   1308    5.0%      LazyCompile: ~toVLQ /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/node_modules/.pnpm/@parcel+source-map@2.0.0/node_modules/@parcel/source-map/dist/SourceMap.js:457:8
+   1308  100.0%        LazyCompile: ~stringify /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/node_modules/.pnpm/@parcel+source-map@2.0.0/node_modules/@parcel/source-map/dist/SourceMap.js:475:18
+   1308  100.0%          LazyCompile: ~toMap /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/dist/index.js:96:12
+   1308  100.0%            Eval: ~<anonymous> /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/profile/remapping.js:6:3
+
+   3245   10.2%  t __ZN2v88internal12_GLOBAL__N_132InsertCodeIntoOptimizedCodeCacheEPNS0_24OptimizedCompilationInfoE
+   1550   47.8%    T __ZN2v88internal21Builtin_JsonStringifyEiPmPNS0_7IsolateE
+   1550  100.0%      LazyCompile: ~addVLQMap /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/node_modules/.pnpm/@parcel+source-map@2.0.0/node_modules/@parcel/source-map/dist/node.js:23:12
+   1459   94.1%        LazyCompile: ~remapping /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/dist/index.js:73:19
+   1459  100.0%          Eval: ~<anonymous> /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/profile/remapping.js:6:3
+   1446   99.1%            t __ZN2v88internal12_GLOBAL__N_132InsertCodeIntoOptimizedCodeCacheEPNS0_24OptimizedCompilationInfoE
+     91    5.9%        LazyCompile: ~<anonymous> /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/dist/index.js:85:20
+     91  100.0%          t __ZN2v88internal12_GLOBAL__N_132InsertCodeIntoOptimizedCodeCacheEPNS0_24OptimizedCompilationInfoE
+     91  100.0%            LazyCompile: ~remapping /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/dist/index.js:73:19
+   1425   43.9%    T __ZN2v88internal17Builtin_JsonParseEiPmPNS0_7IsolateE
+   1424   99.9%      LazyCompile: ~ensureSourceMap /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/dist/index.js:70:25
+   1106   77.7%        LazyCompile: ~remapping /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/dist/index.js:73:19
+   1106  100.0%          Eval: ~<anonymous> /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/profile/remapping.js:6:3
+   1096   99.1%            t __ZN2v88internal12_GLOBAL__N_132InsertCodeIntoOptimizedCodeCacheEPNS0_24OptimizedCompilationInfoE
+    318   22.3%        LazyCompile: ~<anonymous> /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/dist/index.js:85:20
+    318  100.0%          t __ZN2v88internal12_GLOBAL__N_132InsertCodeIntoOptimizedCodeCacheEPNS0_24OptimizedCompilationInfoE
+    318  100.0%            LazyCompile: ~remapping /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/dist/index.js:73:19
+
+   1875    5.9%  UNKNOWN
+
+    375    1.2%  /usr/lib/system/libsystem_platform.dylib
+    182   48.5%    T __ZN2v88internal17Builtin_JsonParseEiPmPNS0_7IsolateE
+    182  100.0%      LazyCompile: ~ensureSourceMap /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/dist/index.js:70:25
+    182  100.0%        LazyCompile: ~<anonymous> /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/dist/index.js:85:20
+    182  100.0%          t __ZN2v88internal12_GLOBAL__N_132InsertCodeIntoOptimizedCodeCacheEPNS0_24OptimizedCompilationInfoE
+    182  100.0%            LazyCompile: ~remapping /Users/bytedance/Desktop/Projects/issues/issue_1201_parcel_sourcemap_extend/dist/index.js:73:19
+

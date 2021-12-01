@@ -40,7 +40,7 @@ const asyncTest = (fn) => ({
     .add(
       'antd#remapping',
       asyncTest(async () => {
-        await remapping([minifyResult.map, transformedMap])
+        await remapping([minifyResult.map, transformedMap]).toMap()
       })
     )
     .add('antd#@ampproject/remapping', () => {
@@ -91,7 +91,7 @@ const asyncTest = (fn) => ({
     .add(
       'three#remapping',
       asyncTest(async () => {
-        await remapping([minifyResult.map, transformedMap])
+        await remapping([minifyResult.map, transformedMap]).toMap()
       })
     )
     .add('three#@ampproject/remapping', () => {
@@ -139,7 +139,7 @@ const asyncTest = (fn) => ({
     .add(
       'remapping#remapping',
       asyncTest(async () => {
-        await remapping([minifyResult.map, transformedMap])
+        await remapping([minifyResult.map, transformedMap]).toMap()
       })
     )
     .add('remapping#@ampproject/remapping', () => {

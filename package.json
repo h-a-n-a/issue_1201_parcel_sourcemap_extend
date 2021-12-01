@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "esbuild --platform=node --target=node12 --format=cjs --outdir=dist src/index.ts",
     "benchmark": "esno benchmark/remapping.ts",
-    "prof": "rm -rf *.log && esno --prof --no-logfile-per-isolate profile/remapping.ts && node --prof-process v8.log > profile.log",
-    "prof:cpu": "rm -rf profile/*.cpuprofile && esno --cpu-prof profile/remapping.ts",
+    "prof": "rm -rf *.log && node --prof --no-logfile-per-isolate profile/remapping.js && node --prof-process v8.log > profile.log",
+    "prof:cpu": "rm -rf profile/*.cpuprofile && node --cpu-prof profile/remapping.js",
     "debug": "esno --node-memory-debug profile/remapping.ts"
   },
   "repository": {

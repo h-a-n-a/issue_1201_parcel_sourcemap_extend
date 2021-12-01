@@ -1,0 +1,38 @@
+{
+  "name": "issue_1201_parcel_sourcemap_extend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "benchmark": "esno benchmark/remapping.ts",
+    "prof": "rm -rf *.log && esno --prof --no-logfile-per-isolate profile/remapping.ts && node --prof-process v8.log > profile.log",
+    "prof:cpu": "rm -rf profile/*.cpuprofile && esno --cpu-prof profile/remapping.ts",
+    "debug": "esno --node-memory-debug profile/remapping.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h-a-n-a/issue_1201_parcel_sourcemap_extend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/h-a-n-a/issue_1201_parcel_sourcemap_extend/issues"
+  },
+  "homepage": "https://github.com/h-a-n-a/issue_1201_parcel_sourcemap_extend#readme",
+  "devDependencies": {
+    "@ampproject/remapping": "^1.0.2",
+    "@types/benchmark": "^2.1.1",
+    "@types/node": "^16.11.11",
+    "benchmark": "^2.1.4",
+    "chalk": "^5.0.0",
+    "esbuild": "^0.14.1",
+    "esno": "^0.12.1",
+    "merge-source-map": "^1.1.0",
+    "terser": "^5.10.0",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "@parcel/source-map": "^2.0.0"
+  }
+}
